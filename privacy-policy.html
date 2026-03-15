@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — VoiceTimer</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #F4F7FE;
+      color: #2B3674;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #8E2DE2, #4A00E0);
+      color: white;
+      padding: 48px 24px 36px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      opacity: 0.85;
+      font-size: 0.95rem;
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 780px;
+      margin: 40px auto;
+      padding: 0 24px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #8E2DE2;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2 .icon {
+      font-size: 1.3rem;
+    }
+
+    p,
+    li {
+      font-size: 0.97rem;
+      color: #4A5568;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    ul li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #F3E8FF;
+      border-left: 4px solid #8E2DE2;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 0.95rem;
+      color: #5B21B6;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #D1FAE5;
+      color: #065F46;
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+    }
+
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.85rem;
+      color: #A3AED0;
+    }
+
+    a {
+      color: #8E2DE2;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⏱ VoiceTimer</h1>
+    <p>Privacy Policy &nbsp;·&nbsp; Effective date: March 16, 2026</p>
+  </header>
+
+  <main>
+
+    <div class="card">
+      <h2><span class="icon">👋</span> Overview</h2>
+      <p>
+        VoiceTimer is a hands-free timer app that announces your time aloud. We are committed to protecting
+        your privacy. This policy explains what data the app uses, where it stays, and what we never do.
+      </p>
+      <div class="highlight">
+        <strong>Short version:</strong> VoiceTimer does not collect, transmit, or share any personal data.
+        Everything stays on your device.
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">📦</span> Data We Store <span class="badge">Local only</span></h2>
+      <p>VoiceTimer stores the following data <strong>exclusively on your device</strong>, using Android's local
+        storage:</p>
+      <ul>
+        <li><strong>Routines</strong> — the workout routines you create (name, exercises, durations)</li>
+        <li><strong>Session History</strong> — date, name, and duration of completed sessions</li>
+        <li><strong>Settings</strong> — your voice announcement preferences (interval, on/off toggle)</li>
+      </ul>
+      <p style="margin-top:12px;">This data never leaves your device and is never uploaded to any server.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🚫</span> Data We Do NOT Collect</h2>
+      <ul>
+        <li>No name, email, or account information</li>
+        <li>No location data</li>
+        <li>No microphone or camera access</li>
+        <li>No device identifiers</li>
+        <li>No analytics or usage tracking</li>
+        <li>No advertising identifiers</li>
+        <li>No crash reports sent to any server</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔔</span> Permissions Explained</h2>
+      <p>VoiceTimer requests the following Android permissions and explains why:</p>
+      <ul>
+        <li>
+          <strong>Notifications (POST_NOTIFICATIONS)</strong> — to display the live timer in your
+          notification bar while it runs in the background.
+        </li>
+        <li>
+          <strong>Foreground Service (FOREGROUND_SERVICE)</strong> — to keep the timer running accurately
+          when the app is minimized or the screen is locked.
+        </li>
+        <li>
+          <strong>Wake Lock (WAKE_LOCK)</strong> — to prevent the phone's CPU from sleeping while a timer
+          is active, ensuring accurate second-by-second counting.
+        </li>
+        <li>
+          <strong>System Alert Window (SYSTEM_ALERT_WINDOW)</strong> — declared for potential future overlay
+          functionality. Not actively used in the current version.
+        </li>
+        <li>
+          <strong>Internet (INTERNET)</strong> — used only when you tap the "Buy Me a Coffee" button,
+          which opens an external Gumroad link in your browser. No other network activity occurs.
+        </li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔊</span> Text-to-Speech</h2>
+      <p>
+        VoiceTimer uses Android's built-in Text-to-Speech (TTS) engine (powered by your device's system
+        TTS, such as Google TTS) to read timer announcements aloud. No audio is recorded, transmitted,
+        or stored by VoiceTimer.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">☕</span> Third-Party Links</h2>
+      <p>
+        The app contains a link to <a href="https://mowaisumer.gumroad.com/coffee" target="_blank">Gumroad</a>
+        as a voluntary "Buy Me a Coffee" option. Tapping this link opens your browser and is subject to
+        Gumroad's own privacy policy. VoiceTimer does not share any data with Gumroad.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">👶</span> Children's Privacy</h2>
+      <p>
+        VoiceTimer does not knowingly collect any data from anyone, including children under the age of 13.
+        The app contains no account system, social features, or external communication.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">🔄</span> Changes to This Policy</h2>
+      <p>
+        If we update this privacy policy, we will update the effective date at the top of this page.
+        We encourage you to review this page periodically.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2><span class="icon">✉️</span> Contact</h2>
+      <p>
+        If you have any questions about this privacy policy, you can reach us at:<br /><br />
+        <strong>Developer:</strong> Muhammad Owais<br />
+        <strong>Email:</strong> muhammedowais2013@gmail.com<br />
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    &copy; 2026 VoiceTimer by Muhammad Owais. All rights reserved.
+  </footer>
+
+</body>
+
+</html>
